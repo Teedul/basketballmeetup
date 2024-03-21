@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Meetup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Basketball Meetup</h1>
+        <div class="basketball"></div> <!-- This is where the basketball animation will appear -->
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Submit Your Entry</h2>
+            <form id="meetupForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" required>
+                <label for="place">Place:</label>
+                <input type="text" id="place" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="meetupEntries" class="entries-container">
+            <!-- Submitted entries will be displayed here -->
+        </div>
+
+        <button onclick="clearMeetupEntries()">Clear Entries</button> <!-- Button to clear entries -->
+    </div>
+
+    <!-- Script files -->
+    <script src="script.js"></script>
+</body>
+</html>
